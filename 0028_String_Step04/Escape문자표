@@ -1,0 +1,11 @@
+Escape
+
+\n NewLine
+\t horizontal tab
+\b backspace
+\r carriage return
+\u FFFFUnicodeWW
+\f form feed
+\' single quota
+\" dobule quota
+\\ backslash

@@ -1,0 +1,30 @@
+변수의 종류는 3가지로 구분됨
+1) local variable 
+2) instance variable / class variable
+3) static variable 
+
+각 변수는 생성되는 메모리의 위치에 따라서 사용되는 범위와 사용 방법이 다름
+
+1) local variable
+ stack 영역에서 선언
+ 지역변수의 경우는 상위에서 선언된 변수명을 다시 입력은 되지만 선언은 되지 않는다
+ method 내부에 사용되는 변수 
+ 선언만하여 사용할 수 없음, 사용후에서 모두 메모리에서 사라짐
+ 
+ 2) instance/class variable
+  heap영역에 선언이 된다
+  class 멤버영역 중에서 멤버필드영역에 선언된 변수
+  접근제한자를 가지고 있음 따라서 사용되는 접근범위를 제어할 수 있음
+  지역변수와 같이 같은 instance variable 영역에서 선언된 변수명을 사용할 수 있음
+  선언을 자동으로 해당 타입의 default 초기값으로 입력된다
+  
+ 3) static variable
+  method area의 static 영역에 선언된다
+  static으로 선언되어 있기 때문에 클래스명.멤버 이름으로 사용이 가능하다
+  생성은 메모리에 무조건 할당되지만, 접근제한자에 의해서 접근을 제어 할 수 있음
+ 
+ 
+ 
+ 
+ 
+ 

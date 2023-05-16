@@ -1,0 +1,12 @@
+ Sealed Class, Interface는 간단하게 상속(extends) , 구현(implements)할 클래스를 지정해두고 
+ 해당 클래스 만을 상속또 구현을 "허용" 하는 키워드
+ 
+ 상속/구현하는 클래스는  final, non-sealed, sealed 중 하나로 선언되어야 합니다
+ permitted Subclass들은 동일한 module에 속해야 하며, 이름이 지정되지 않은 module에 선언 시에는 동일한 package 내에 속해야 한다
+ permitted Subclass는 Sealed Class를 직접 확장(구현)해야 한다
+ 
+ 1) Fruit에서  Orange, Lemon 에 대해서 sealed / permits 를 작성하고
+ 2) Orange(sealed)와  Lemon(sealed)은 interface인 Fruit를 implements하여 사용이 가능하다
+ 2-1) sealed되어 있는 자식클래스는 final class로 선언되어야 한다
+ 3) 하지만 Fruit에 의해서 허용되지 않은 Banana는 사용 불가능합니다
+ 4) 2-1의 Lemon 마지막 자식의 클래스가 아닌 다른 자식클래스를 사용하기 위해 final을 non-sealed 함으로써 다른 자식클래스를 가질 수 있다
